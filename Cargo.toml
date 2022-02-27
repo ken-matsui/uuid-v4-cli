@@ -1,0 +1,28 @@
+[package]
+name = "uuid-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ken Matsui <26405363+ken-matsui@users.noreply.github.com>"]
+description = "A CLI tool to generate UUID V4"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ken-matsui/uuid-cli/"
+homepage = "https://github.com/ken-matsui/uuid-cli#readme"
+documentation = "https://docs.rs/uuid-cli"
+
+[dependencies]
+clap = { version = "3.1.2", features = ["derive"] }
+uuid = { version = "0.8", features = ["v4"] }
+
+[dev-dependencies]
+inline-c = "0.1"
+
+[build-dependencies]
+cbindgen = "0.20"
+
+[lib]
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "uuid"
+path = "src/main.rs"
