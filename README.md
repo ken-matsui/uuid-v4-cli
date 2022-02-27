@@ -108,7 +108,7 @@ urn:uuid:5B91ECE3-A85D-481E-BA45-69AC04ECC0F0
 ### Simple UUID
 
 ```bash
-$ wapm run uuid --
+$ wapm run uuid
 4611494855814da2a559fd0d6d422766
 ```
 
