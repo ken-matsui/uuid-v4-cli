@@ -1,6 +1,6 @@
 # uuid-v4-cli [![crates.io version](https://img.shields.io/crates/v/uuid-v4-cli.svg)](https://crates.io/crates/uuid-v4-cli) [![crates.io downloads](https://img.shields.io/crates/d/uuid-v4-cli.svg)](https://crates.io/crates/uuid-v4-cli)
 
-A CLI tool to generate UUID V4 which supports both native and [WebAssembly](#WebAssembly)
+A CLI tool to generate UUID V4 which supports both native and WebAssembly
 
 *Note: This project is a fork of the original Rust implementation: [uuid-rs](https://github.com/uuid-rs/uuid).*
 
