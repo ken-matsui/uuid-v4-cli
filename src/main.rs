@@ -40,14 +40,24 @@ mod tests {
     }
     #[test]
     fn test_hyphenated_uuid() {
-        let mut opts = Opts::default();
-        opts.hyphenated = true;
-        assert_eq!(new(opts).len(), 36);
+        assert_eq!(
+            new(Opts {
+                hyphenated: true,
+                ..Default::default()
+            })
+            .len(),
+            36
+        );
     }
     #[test]
     fn test_urn_uuid() {
-        let mut opts = Opts::default();
-        opts.urn = true;
-        assert_eq!(new(opts).len(), 45);
+        assert_eq!(
+            new(Opts {
+                urn: true,
+                ..Default::default()
+            })
+            .len(),
+            45
+        );
     }
 }
