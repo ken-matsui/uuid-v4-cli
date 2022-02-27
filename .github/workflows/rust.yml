@@ -36,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run
-      run: cargo run encode hello
+      run: cargo run
 
   run-wasm:
     runs-on: macos-latest
@@ -51,7 +51,7 @@ jobs:
     - name: Build
       run: cargo build --verbose --target wasm32-wasi
     - run: brew install wasmer
-    - run: wasmer run target/wasm32-wasi/debug/uuid.wasm encode hello
+    - run: wasmer run target/wasm32-wasi/debug/uuid.wasm
 
   format:
     runs-on: ubuntu-latest

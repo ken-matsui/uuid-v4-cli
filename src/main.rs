@@ -19,26 +19,6 @@ pub struct Opts {
     pub uppercase: bool,
 }
 
-impl Opts {
-    pub fn hyphenated() -> Self {
-        let mut opts = Self::default();
-        opts.hyphenated = true;
-        opts
-    }
-
-    pub fn urn() -> Self {
-        let mut opts = Self::default();
-        opts.urn = true;
-        opts
-    }
-
-    pub fn uppercase() -> Self {
-        let mut opts = Self::default();
-        opts.uppercase = true;
-        opts
-    }
-}
-
 fn new(opts: Opts) -> String {
     let output_c_str =
         unsafe { CStr::from_ptr(lib::generate(opts.hyphenated, opts.urn, opts.uppercase)) };
@@ -60,10 +40,14 @@ mod tests {
     }
     #[test]
     fn test_hyphenated_uuid() {
-        assert_eq!(new(Opts::hyphenated()).len(), 36);
+        let mut opts = Opts::default();
+        opts.hyphenated = true;
+        assert_eq!(new(opts).len(), 36);
     }
     #[test]
     fn test_urn_uuid() {
-        assert_eq!(new(Opts::urn()).len(), 45);
+        let mut opts = Opts::default();
+        opts.urn = true;
+        assert_eq!(new(opts).len(), 45);
     }
 }
