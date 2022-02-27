@@ -1,4 +1,4 @@
-# uuid-cli [![crates.io version](https://img.shields.io/crates/v/uuid-cli.svg)](https://crates.io/crates/uuid-cli) [![crates.io downloads](https://img.shields.io/crates/d/uuid-cli.svg)](https://crates.io/crates/uuid-cli)
+# uuid-v4-cli [![crates.io version](https://img.shields.io/crates/v/uuid-v4-cli.svg)](https://crates.io/crates/uuid-v4-cli) [![crates.io downloads](https://img.shields.io/crates/d/uuid-v4-cli.svg)](https://crates.io/crates/uuid-v4-cli)
 
 A CLI tool to generate UUID V4 which supports both native and [WebAssembly](#WebAssembly)
 
@@ -9,7 +9,7 @@ A CLI tool to generate UUID V4 which supports both native and [WebAssembly](#Web
 You can install this using the `cargo install` command:
 
 ```bash
-$ cargo install uuid-cli
+$ cargo install uuid-v4-cli
 ```
 
 ### WebAssembly
@@ -24,8 +24,8 @@ $ wapm install ken-matsui/uuid
 ## Usage
 
 ```bash
-$ uuid-cli --help
-uuid-cli 0.1.0
+$ uuid --help
+uuid-v4-cli 0.1.0
 Ken Matsui <26405363+ken-matsui@users.noreply.github.com>
 A CLI tool to generate UUID V4
 
@@ -44,7 +44,7 @@ OPTIONS:
 
 ```bash
 $ wapm run uuid -- --help
-uuid-cli 0.1.0
+uuid-v4-cli 0.1.0
 Ken Matsui <26405363+ken-matsui@users.noreply.github.com>
 A CLI tool to generate UUID V4
 
@@ -64,42 +64,42 @@ OPTIONS:
 ### Simple UUID
 
 ```bash
-$ uuid-cli
+$ uuid
 4611494855814da2a559fd0d6d422766
 ```
 
 #### with uppercase
 
 ```bash
-$ uuid-cli -u
+$ uuid -u
 4D41163F06F7404BBB3A6C357062DAE0
 ```
 
 ### Hyphenated UUID
 
 ```bash
-$ uuid-cli -h
+$ uuid -h
 b6dc2c9c-6408-433f-8e5b-f91677cad729
 ```
 
 #### with uppercase
 
 ```bash
-$ uuid-cli -u
+$ uuid -u
 2FBC671A-3BD9-4BDC-B5B2-95C18CBEF900
 ```
 
 ### Urn UUID
 
 ```bash
-$ uuid-cli --urn
+$ uuid --urn
 urn:uuid:9756279b-886a-4bc7-83ae-cefe69e8397e
 ```
 
 #### with uppercase
 
 ```bash
-$ uuid-cli --urn -u
+$ uuid --urn -u
 urn:uuid:5B91ECE3-A85D-481E-BA45-69AC04ECC0F0
 ```
 
@@ -180,7 +180,7 @@ $ cargo test
 
 ### Publish
 
-#### [GitHub Releases](https://github.com/ken-matsui/uuid-cli/tags)
+#### [GitHub Releases](https://github.com/ken-matsui/uuid-v4-cli/tags)
 
 ```bash
 $ git tag v0.1.0

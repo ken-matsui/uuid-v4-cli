@@ -4,8 +4,8 @@ version = "0.1.0"
 description = "UUID in WebAssembly"
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/ken-matsui/uuid-cli"
-homepage = "https://github.com/ken-matsui/uuid-cli#readme"
+repository = "https://github.com/ken-matsui/uuid-v4-cli"
+homepage = "https://github.com/ken-matsui/uuid-v4-cli#readme"
 
 [[module]]
 name = "uuid"

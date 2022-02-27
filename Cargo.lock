@@ -652,7 +652,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "uuid-cli"
+name = "uuid-v4-cli"
 version = "0.1.0"
 dependencies = [
  "cbindgen",

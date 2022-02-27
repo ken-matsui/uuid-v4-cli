@@ -41,7 +41,7 @@ mod tests {
     #[test]
     fn test_c_api_simple_uuid() {
         (assert_c! {
-            #include "uuid-cli.h"
+            #include "uuid-v4-cli.h"
             #include <stdio.h>
             #include <string.h>
 
@@ -58,7 +58,7 @@ mod tests {
     #[test]
     fn test_c_api_hyphenated_uuid() {
         (assert_c! {
-            #include "uuid-cli.h"
+            #include "uuid-v4-cli.h"
             #include <stdio.h>
             #include <string.h>
 
@@ -75,7 +75,7 @@ mod tests {
     #[test]
     fn test_c_api_urn_uuid() {
         (assert_c! {
-            #include "uuid-cli.h"
+            #include "uuid-v4-cli.h"
             #include <stdio.h>
             #include <string.h>
 
