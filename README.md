@@ -85,7 +85,7 @@ b6dc2c9c-6408-433f-8e5b-f91677cad729
 #### with uppercase
 
 ```bash
-$ uuid -u
+$ uuid -h -u
 2FBC671A-3BD9-4BDC-B5B2-95C18CBEF900
 ```
 
@@ -129,7 +129,7 @@ b6dc2c9c-6408-433f-8e5b-f91677cad729
 #### with uppercase
 
 ```bash
-$ wapm run uuid -- -u
+$ wapm run uuid -- -h -u
 2FBC671A-3BD9-4BDC-B5B2-95C18CBEF900
 ```
 
