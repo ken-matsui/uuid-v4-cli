@@ -7,21 +7,21 @@ use uuid::Uuid;
 pub extern "C" fn generate(hyphenated: bool, urn: bool, uppercase: bool) -> *const c_char {
     let uuid = Uuid::new_v4();
     let output = CString::new(if hyphenated {
-        let uuid = uuid.to_hyphenated();
+        let uuid = uuid.as_hyphenated();
         if uppercase {
             uuid.encode_upper(&mut Uuid::encode_buffer()).to_string()
         } else {
             uuid.to_string()
         }
     } else if urn {
-        let uuid = uuid.to_urn();
+        let uuid = uuid.as_urn();
         if uppercase {
             uuid.encode_upper(&mut Uuid::encode_buffer()).to_string()
         } else {
             uuid.to_string()
         }
     } else {
-        let uuid = uuid.to_simple();
+        let uuid = uuid.as_simple();
         if uppercase {
             uuid.encode_upper(&mut Uuid::encode_buffer()).to_string()
         } else {
