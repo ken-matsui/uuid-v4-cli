@@ -1,7 +1,7 @@
 mod lib;
 
 use clap::Parser;
-use std::ffi::CStr;
+use std::ffi::CString;
 
 #[derive(Parser, Default)]
 #[clap(author, version, about, long_about = None)]
@@ -21,7 +21,7 @@ pub struct Opts {
 
 fn new(opts: Opts) -> String {
     let output_c_str =
-        unsafe { CStr::from_ptr(lib::generate(opts.hyphenated, opts.urn, opts.uppercase)) };
+        unsafe { CString::from_raw(lib::generate(opts.hyphenated, opts.urn, opts.uppercase)) };
     output_c_str.to_str().unwrap().to_string()
 }
 
