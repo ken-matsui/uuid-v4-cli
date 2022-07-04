@@ -26,7 +26,6 @@ $ wapm install ken-matsui/uuid
 ```bash
 $ uuid --help
 uuid-v4-cli 0.1.1
-Ken Matsui <26405363+ken-matsui@users.noreply.github.com>
 A CLI tool to generate UUID V4
 
 USAGE:
@@ -45,7 +44,6 @@ OPTIONS:
 ```bash
 $ wapm run uuid -- --help
 uuid-v4-cli 0.1.1
-Ken Matsui <26405363+ken-matsui@users.noreply.github.com>
 A CLI tool to generate UUID V4
 
 USAGE:

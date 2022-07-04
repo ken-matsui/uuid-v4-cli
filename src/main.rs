@@ -4,7 +4,7 @@ use clap::Parser;
 use std::ffi::CString;
 
 #[derive(Parser, Default)]
-#[clap(author, version, about, long_about = None)]
+#[clap(version, about, long_about = None)]
 pub struct Opts {
     /// Show with hyphens
     #[clap(short, long, group = "format")]
