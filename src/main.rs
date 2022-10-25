@@ -7,7 +7,7 @@ use std::ffi::CString;
 #[clap(version, about, long_about = None)]
 pub struct Opts {
     /// Show with hyphens
-    #[clap(short, long, group = "format")]
+    #[clap(short = 'H', long, group = "format")]
     pub hyphenated: bool,
 
     /// Show as a urn
