@@ -25,14 +25,14 @@ $ wapm install ken-matsui/uuid
 
 ```bash
 $ uuid --help
-uuid-v4-cli 0.1.1
+uuid-v4-cli 0.3.0
 A CLI tool to generate UUID V4
 
 USAGE:
     uuid [OPTIONS]
 
 OPTIONS:
-    -h, --hyphenated    Show with hyphens
+    -H, --hyphenated    Show with hyphens
         --help          Print help information
     -u, --uppercase     Show as uppercase (default: lowercase)
         --urn           Show as a urn
@@ -43,14 +43,14 @@ OPTIONS:
 
 ```bash
 $ wapm run uuid -- --help
-uuid-v4-cli 0.1.1
+uuid-v4-cli 0.3.0
 A CLI tool to generate UUID V4
 
 USAGE:
     uuid [OPTIONS]
 
 OPTIONS:
-    -h, --hyphenated    Show with hyphens
+    -H, --hyphenated    Show with hyphens
         --help          Print help information
     -u, --uppercase     Show as uppercase (default: lowercase)
         --urn           Show as a urn
@@ -76,14 +76,14 @@ $ uuid -u
 ### Hyphenated UUID
 
 ```bash
-$ uuid -h
+$ uuid -H
 b6dc2c9c-6408-433f-8e5b-f91677cad729
 ```
 
 #### with uppercase
 
 ```bash
-$ uuid -h -u
+$ uuid -H -u
 2FBC671A-3BD9-4BDC-B5B2-95C18CBEF900
 ```
 
@@ -120,14 +120,14 @@ $ wapm run uuid -- -u
 ### Hyphenated UUID
 
 ```bash
-$ wapm run uuid -- -h
+$ wapm run uuid -- -H
 b6dc2c9c-6408-433f-8e5b-f91677cad729
 ```
 
 #### with uppercase
 
 ```bash
-$ wapm run uuid -- -h -u
+$ wapm run uuid -- -H -u
 2FBC671A-3BD9-4BDC-B5B2-95C18CBEF900
 ```
 
