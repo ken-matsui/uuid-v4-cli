@@ -2,8 +2,6 @@
 
 A CLI tool to generate UUID V4 which supports both native and WebAssembly
 
-*Note: This project is a fork of the original Rust implementation: [uuid-rs](https://github.com/uuid-rs/uuid).*
-
 ## Installation
 
 You can install this using the `cargo install` command:
